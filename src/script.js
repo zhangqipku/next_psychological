@@ -243,16 +243,16 @@ function displayResults(totalScore) {
 
 // 分享功能
 function setupShareButtons() {
-    // // 微信分享（需服务器端实现二维码生成，此处为简化版）
-    // document.getElementById('wechat-share').addEventListener('click', () => {
-    //     showToast('截屏分享给微信好友');
-    // });
+    // 微信分享（需服务器端实现二维码生成，此处为简化版）
+    document.getElementById('wechat-share').addEventListener('click', () => {
+        showToast('截屏分享给微信好友');
+    });
     
-    // // 微博分享
-    // document.getElementById('weibo-share').addEventListener('click', () => {
-    //     const url = encodeURIComponent(window.location.href);
-    //     window.open(`https://service.weibo.com/share/share.php?url=${url}&title=我的性格测试结果是：${resultData[0].title}`, '_blank');
-    // });
+    // 微博分享
+    document.getElementById('weibo-share').addEventListener('click', () => {
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://service.weibo.com/share/share.php?url=${url}&title=我的性格测试结果是：${resultData[0].title}`, '_blank');
+    });
     
     // 复制链接
     document.getElementById('copy-link').addEventListener('click', () => {
