@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理性格测试 | 发现真实的自我</title>
+    <meta name="description" content="免费专业心理测试，20道题了解你的核心性格特征，立即开始测试">
+    <meta property="og:image" content="/social-image.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>性格倾向分析测试</h1>
+            <p class="subtitle">回答20个问题，探索你的内心世界</p >
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <div class="progress-text" id="progress-text">0%</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro-container">
+            <div class="intro-card">
+                <h2>准备好了解自己了吗？</h2>
+                <p>本测试基于心理学理论和科学研究，通过20个精心设计的问题分析你的性格倾向。</p >
+                <p>平均测试时间：<strong>5-7分钟</strong></p >
+                <button id="start-btn" class="btn-primary">开始测试</button>
+            </div>
+        </div>
+
+        <form id="psychTest" class="hidden">
+            <!-- 问题区域将通过JS生成 -->
+        </form>
+
+        <div class="controls">
+            <button id="submit-btn" class="btn-primary hidden">查看我的测试结果</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <!-- 结果区域将通过JS生成 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 心灵探索测试 | 本测试结果仅供参考，不构成专业心理建议</p >
+        <div id="share-section" class="hidden">
+            <p>分享你的测试结果：</p >
+            <div class="share-buttons">
+                <!-- <button id="wechat-share" class="share-btn">微信</button>
+                <button id="weibo-share" class="share-btn">微博</button> -->
+                <button id="copy-link" class="share-btn">复制链接</button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
