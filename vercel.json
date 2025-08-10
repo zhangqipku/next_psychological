@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "psyc.html",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/psyc.html"
+      "dest": "/index.html"
     }
   ]
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理测试 - 了解你的性格特点</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="intro-screen" class="screen active">
+            <h1>心理性格测试</h1>
+            <p>本测试包含20个问题，旨在帮助你更好地了解自己的性格特点。</p >
+            <p>请根据你的真实感受选择最符合的选项。</p >
+            <button id="start-btn" class="btn">开始测试</button>
+        </div>
+
+        <div id="test-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <span id="progress-text">1/20</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">问题加载中...</h2>
+                <div class="options">
+                    <button class="option-btn" data-score="1">完全不符合</button>
+                    <button class="option-btn" data-score="2">不太符合</button>
+                    <button class="option-btn" data-score="3">一般</button>
+                    <button class="option-btn" data-score="4">比较符合</button>
+                    <button class="option-btn" data-score="5">完全符合</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>你的测试结果</h1>
+            <div id="result-content">
+                <p id="result-text">正在计算你的结果...</p >
+                <div id="result-details"></div>
+            </div>
+            <button id="restart-btn" class="btn">重新测试</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
